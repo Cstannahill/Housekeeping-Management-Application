@@ -1,6 +1,6 @@
 import { RoomModel } from "@/types/RoomType";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/firebaseConfig"; // Make sure your Firestore instance is imported
+import { db } from "@/firebaseConfig";
 export const rooms: RoomModel[] = [
   {
     id: "101",
