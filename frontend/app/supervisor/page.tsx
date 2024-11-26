@@ -20,7 +20,7 @@ export default function SupervisorDashboard() {
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Supervisor Dashboard - {user}</h1>
 
-      {/* Room cards */}
+
       <div className="grid grid-cols-3 gap-4">
         {rooms
           // .filter((ra) => ra.assignedTo === user)
