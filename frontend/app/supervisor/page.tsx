@@ -1,8 +1,8 @@
-// app/supervisor/page.tsx
+
 "use client";
 
 import { useState } from "react";
-import Room from "../../components/Room"; // Import the Room component
+import Room from "../../components/Room"; 
 import { rooms } from "../services/roomService";
 
 export default function SupervisorDashboard() {
