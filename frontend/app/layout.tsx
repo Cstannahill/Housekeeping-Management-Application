@@ -1,11 +1,11 @@
-// app/layout.tsx
+
 "use client";
 
 import "./globals.css";
 import { ReactNode, useEffect } from "react";
 import { auth } from "../firebaseConfig";
 
-// Define types for your props
+
 type RootLayoutProps = {
   children: ReactNode;
 };
