@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { RoomModel } from "../types/RoomType"; // Import the relevant types
+import { RoomModel } from "../types/RoomType"; 
 import { Timestamp, doc, setDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // Firestore configuration
+import { db } from "../firebaseConfig"; 
 
 type RoomProps = {
-  room: RoomModel | undefined; // Ensure room can be undefined
+  room: RoomModel | undefined; 
   close: () => void;
-  userRole: "housekeeper" | "supervisor"; // Add userRole for conditional logic
-  user: string; // Pass the user
-  onComplete: (updatedRoom: RoomModel) => void; // Add completion handler
+  userRole: "housekeeper" | "supervisor"; 
+  user: string; 
+  onComplete: (updatedRoom: RoomModel) => void; 
 };
 
 const Room = ({ room, close, userRole, user, onComplete }: RoomProps) => {
@@ -68,7 +68,7 @@ const Room = ({ room, close, userRole, user, onComplete }: RoomProps) => {
     setStartTime(start);
     setCleaningStarted(true);
 
-    // Add a start record to roomHistory
+
     const roomHistoryRef = doc(
       db,
       "roomHistory",
